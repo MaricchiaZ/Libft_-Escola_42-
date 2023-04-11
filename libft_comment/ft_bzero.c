@@ -27,7 +27,7 @@ void	ft_bzero(void *s, int n) //recebe um ponteiro pra uma área da memória e o
 	{
 		*(unsigned char *)(s + i) = '\0'; //fazemos um cast do ponteiro void de s para um ponteiro unsigned char
 		// e somamos o s ao índice, fazendo uma aritmérica de ponteiro, 
-		//e  cada byte que passamos recebe o byte nulo '\0' 
+		i++;//e  cada byte que passamos recebe o byte nulo '\0' 
 		n--; //decrementamos o n para agir apenas nos n bytes pedidos
 	}
 }
